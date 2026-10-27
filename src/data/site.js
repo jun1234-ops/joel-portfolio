@@ -189,3 +189,42 @@ export const achievements = [
     ],
   },
 ];
+
+// image: null shows a placeholder. Later, put a screenshot in public/projects/
+// and set image: "/projects/your-screenshot.jpg"
+// A link with href: null is hidden, so only add links you actually have.
+export const projects = [
+  {
+    id: 1,
+    title: "Project Title One",
+    type: "Web App",
+    description:
+      "What the project does, the problem it solves and your part in it. Placeholder text.",
+    tags: ["Tag", "Tag", "Tag"],
+    image: null,
+    links: [
+      { label: "Live Demo", href: null },
+      { label: "Source Code", href: null },
+    ],
+  },
+  {
+    id: 2,
+    title: "Project Title Two",
+    type: "IT Support",
+    description:
+      "A support or infrastructure project: what was broken, what you did, what improved.",
+    tags: ["Tag", "Tag"],
+    image: null,
+    links: [{ label: "Case Study", href: null }],
+  },
+  {
+    id: 3,
+    title: "Project Title Three",
+    type: "Project Management",
+    description:
+      "A project you managed: scope, team, timeline and the outcome you delivered.",
+    tags: ["Tag", "Tag", "Tag"],
+    image: null,
+    links: [{ label: "Project Report", href: null }],
+  },
+];
