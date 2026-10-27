@@ -35,23 +35,26 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Photo placeholder side */}
-        <div className="relative mx-auto flex h-80 w-80 items-end justify-center overflow-hidden rounded-full bg-brand-amber md:h-96 md:w-96">
-          {/* Simple person silhouette. Replace with your photo later */}
-          <svg
-            viewBox="0 0 100 100"
-            className="h-full w-full text-brand-green/80"
-            fill="currentColor"
-            aria-label="Photo placeholder"
-          >
-            <circle cx="50" cy="38" r="16" />
-            <path d="M18 100c0-20 14-34 32-34s32 14 32 34z" />
-          </svg>
+                {/* Photo placeholder side */}
+        <div className="relative mx-auto h-80 w-80 md:h-96 md:w-96">
+          {/* The circle clips the photo only */}
+          <div className="flex h-full w-full items-end justify-center overflow-hidden rounded-full bg-brand-amber">
+            <svg
+              viewBox="0 0 100 100"
+              className="h-full w-full text-brand-green/80"
+              fill="currentColor"
+              aria-label="Photo placeholder"
+            >
+              <circle cx="50" cy="38" r="16" />
+              <path d="M18 100c0-20 14-34 32-34s32 14 32 34z" />
+            </svg>
+          </div>
 
-          <span className="absolute bottom-10 left-0 rounded-full bg-brand-green px-4 py-2 text-xs font-medium text-white shadow-lg">
+          {/* Tags sit outside the clip, so they can overhang the edge */}
+          <span className="absolute -left-4 bottom-12 rounded-full bg-brand-green px-4 py-2 text-xs font-medium text-white shadow-lg">
             {profile.floatingTags[0]}
           </span>
-          <span className="absolute right-0 top-1/2 rounded-full bg-white px-4 py-2 text-xs font-medium text-brand-green shadow-lg">
+          <span className="absolute -right-4 top-1/2 rounded-full bg-white px-4 py-2 text-xs font-medium text-brand-green shadow-lg">
             {profile.floatingTags[1]}
           </span>
         </div>

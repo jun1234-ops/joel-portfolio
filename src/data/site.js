@@ -129,3 +129,19 @@ export const journey = [
     evidence: ["Project report", "Team photo"],
   },
 ];
+
+export const about = {
+  label: "About Me",
+  title: "Who is",
+  bio: [
+    "First paragraph of your story goes here. Where you come from and what shaped you. Placeholder text.",
+    "Second paragraph: what you do now, what drives you, and where you are heading.",
+  ],
+  stats: [
+    { value: 5, suffix: "+", label: "Projects Completed" },
+    { value: 3, suffix: "+", label: "Certifications" },
+    { value: 4, suffix: "+", label: "Years of Experience" },
+  ],
+  beyondWork: ["Interest One", "Interest Two", "Interest Three", "Value One"],
+  cv: { label: "Download CV", href: "#" },
+};
