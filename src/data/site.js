@@ -145,3 +145,47 @@ export const about = {
   beyondWork: ["Interest One", "Interest Two", "Interest Three", "Value One"],
   cv: { label: "Download CV", href: "#" },
 };
+
+export const achievementCategories = [
+  "All",
+  "Academic",
+  "Professional",
+  "Personal",
+];
+
+// src: null shows a placeholder. When you have a real file, put it in
+// public/evidence/ and set src: "/evidence/your-file.jpg"
+export const achievements = [
+  {
+    id: 1,
+    category: "Academic",
+    title: "Achievement Title One",
+    date: "Month 20XX",
+    description:
+      "What you achieved and why it mattered. Placeholder text for now.",
+    evidence: [
+      { label: "Certificate", src: null },
+      { label: "Photo", src: null },
+    ],
+  },
+  {
+    id: 2,
+    category: "Professional",
+    title: "Achievement Title Two",
+    date: "Month 20XX",
+    description: "A win at work, a problem you solved, or a result you delivered.",
+    evidence: [{ label: "Screenshot", src: null }],
+  },
+  {
+    id: 3,
+    category: "Personal",
+    title: "Achievement Title Three",
+    date: "Month 20XX",
+    description: "A personal milestone or a moment of growth you're proud of.",
+    evidence: [
+      { label: "Photo", src: null },
+      { label: "Letter", src: null },
+      { label: "Document", src: null },
+    ],
+  },
+];
