@@ -37,8 +37,6 @@ export default function Contact() {
     }
   }
 
-
-
   return (
     <section id="contact" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-20">
       <p className="text-sm">
@@ -53,6 +51,7 @@ export default function Contact() {
         {/* Left: info */}
         <div>
           <p className="max-w-md text-foreground/80">{contact.intro}</p>
+
           <p className="mt-6 text-sm text-foreground/60">Email</p>
           <a
             href={`mailto:${contact.email}`}
@@ -61,26 +60,20 @@ export default function Contact() {
             {contact.email}
           </a>
 
-          {socials.length > 0 && (
-            <div className="mt-6 flex flex-wrap gap-3">
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-foreground/20 px-4 py-2 text-sm transition hover:bg-brand-green hover:text-white"
-                >
-                  {s.label}
-                </a>
-              ))}
-            </div>
-          )}
+          <p className="mt-8 text-sm text-foreground/60">Find me online</p>
+          <div className="mt-4">
+            <SocialLinks />
+          </div>
         </div>
 
         {/* Right: form */}
         <form onSubmit={handleSubmit} className="space-y-4">
-          <input name="name" placeholder="Your name" required className={inputStyle} />
+          <input
+            name="name"
+            placeholder="Your name"
+            required
+            className={inputStyle}
+          />
           <input
             name="email"
             type="email"
