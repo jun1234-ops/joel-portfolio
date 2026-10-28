@@ -10,7 +10,13 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata = {
   title: "Joel Tochi | Portfolio",
   description:
-    "The journey, experience, achievements and work of Joel Tochi.",
+    "Portfolio of Joel Tochi, a computer scientist with hands-on experience in IT support and project management. Explore my journey, education, certifications, achievements and projects.",
+  openGraph: {
+    title: "Joel Tochi | Portfolio",
+    description:
+      "My journey, education, certifications, achievements and projects, with evidence.",
+    type: "website",
+  },
 };
 
 // Runs before the page paints, so the saved theme is applied with no flash
