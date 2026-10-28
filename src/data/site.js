@@ -269,10 +269,12 @@ export const reflections = [
 export const contact = {
   intro:
     "Have an opportunity, a question, or just want to say hello? Send a message and I'll get back to you.",
-  email: "your-email@example.com",
+  email: "joeltochi.dev@gmail.com",
   socials: [
-    { label: "LinkedIn", href: null },
-    { label: "GitHub", href: null },
-    { label: "Twitter / X", href: null },
+    { icon: "linkedin", label: "LinkedIn", handle: "@your-handle", href: null },
+    { icon: "github", label: "GitHub", handle: "@your-handle", href: null },
+    { icon: "x", label: "X (Twitter)", handle: "@your-handle", href: null },
+    { icon: "instagram", label: "Instagram", handle: "@your-handle", href: null },
+    { icon: "whatsapp", label: "WhatsApp", handle: "+234 000 000 0000", href: null },
   ],
 };

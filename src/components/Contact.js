@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { contact } from "@/data/site";
+import SocialLinks from "./SocialLinks";
 
 const inputStyle =
   "w-full rounded-xl border border-foreground/20 bg-background px-4 py-3 text-sm outline-none transition focus:border-brand-amber";
@@ -36,7 +37,7 @@ export default function Contact() {
     }
   }
 
-  const socials = contact.socials.filter((s) => s.href);
+
 
   return (
     <section id="contact" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-20">
