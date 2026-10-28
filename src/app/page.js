@@ -5,8 +5,9 @@ import About from "@/components/About";
 import Journey from "@/components/Journey";
 import Achievements from "@/components/Achievements";
 import Projects from "@/components/Projects";
-import SectionPlaceholder from "@/components/SectionPlaceholder";
-import { sections } from "@/data/site";
+import Reflections from "@/components/Reflections";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,15 +16,14 @@ export default function Home() {
       <main>
         <Hero />
         <Marquee />
-        {sections.map((section) => {
-          if (section.id === "about") return <About key={section.id} />;
-          if (section.id === "journey") return <Journey key={section.id} />;
-          if (section.id === "achievements")
-            return <Achievements key={section.id} />;
-          if (section.id === "projects") return <Projects key={section.id} />;
-          return <SectionPlaceholder key={section.id} {...section} />;
-        })}
+        <About />
+        <Journey />
+        <Achievements />
+        <Projects />
+        <Reflections />
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }

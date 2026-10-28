@@ -228,3 +228,51 @@ export const projects = [
     links: [{ label: "Project Report", href: null }],
   },
 ];
+
+export const reflections = [
+  {
+    id: 1,
+    tag: "Lesson",
+    title: "Reflection Title One",
+    date: "Month 20XX",
+    readTime: "3 min read",
+    excerpt: "A one or two line teaser of what this note is about.",
+    body: [
+      "First paragraph of the note. Placeholder text for now.",
+      "Second paragraph: what you learned and how it changed the way you work.",
+    ],
+  },
+  {
+    id: 2,
+    tag: "Career",
+    title: "Reflection Title Two",
+    date: "Month 20XX",
+    readTime: "4 min read",
+    excerpt: "Something from your IT support or project management journey.",
+    body: [
+      "First paragraph of the note. Placeholder text for now.",
+      "Second paragraph with the takeaway.",
+    ],
+  },
+  {
+    id: 3,
+    tag: "Learning",
+    title: "Reflection Title Three",
+    date: "Month 20XX",
+    readTime: "2 min read",
+    excerpt: "Something you are studying, such as cybersecurity.",
+    body: ["Placeholder text for now.", "What you want to explore next."],
+  },
+];
+
+// A link with href: null is hidden. Add only the ones you have.
+export const contact = {
+  intro:
+    "Have an opportunity, a question, or just want to say hello? Send a message and I'll get back to you.",
+  email: "your-email@example.com",
+  socials: [
+    { label: "LinkedIn", href: null },
+    { label: "GitHub", href: null },
+    { label: "Twitter / X", href: null },
+  ],
+};
